@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AAD53AE6218023B5000AFF58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53AE5218023B5000AFF58 /* AppDelegate.m */; };
-		AAD53AE9218023B5000AFF58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53AE8218023B5000AFF58 /* ViewController.m */; };
 		AAD53AEC218023B5000AFF58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD53AEA218023B5000AFF58 /* Main.storyboard */; };
 		AAD53AEE218023B7000AFF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD53AED218023B7000AFF58 /* Assets.xcassets */; };
 		AAD53AF1218023B7000AFF58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD53AEF218023B7000AFF58 /* LaunchScreen.storyboard */; };
 		AAD53AF4218023B7000AFF58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53AF3218023B7000AFF58 /* main.m */; };
 		AAD53AFE218023B7000AFF58 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53AFD218023B7000AFF58 /* DemoTests.m */; };
 		AAD53B09218023B7000AFF58 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B08218023B7000AFF58 /* DemoUITests.m */; };
+		AAD53B182180243B000AFF58 /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B172180243B000AFF58 /* TabbarVC.m */; };
+		AAD53B24218024BD000AFF58 /* HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B23218024BD000AFF58 /* HomePageVC.m */; };
+		AAD53B27218024F4000AFF58 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B26218024F4000AFF58 /* NewsCell.m */; };
+		AAD53B2A21802503000AFF58 /* CoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B2921802503000AFF58 /* CoinCell.m */; };
+		AAD53B3821803D37000AFF58 /* Smile intl-大莫豪城交易所 in Resources */ = {isa = PBXBuildFile; fileRef = AAD53B3721803D37000AFF58 /* Smile intl-大莫豪城交易所 */; };
+		AAD53B4121803D98000AFF58 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B4021803D98000AFF58 /* LoginVC.m */; };
+		AAD53B4421803DAA000AFF58 /* TradeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B4321803DAA000AFF58 /* TradeVC.m */; };
+		AAD53B4721803DBD000AFF58 /* FranceCoinVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B4621803DBD000AFF58 /* FranceCoinVC.m */; };
+		AAD53B4B21803DD6000AFF58 /* PropertyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B4A21803DD6000AFF58 /* PropertyVC.m */; };
+		AAD53B4E21803DE1000AFF58 /* MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53B4D21803DE1000AFF58 /* MineVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +47,6 @@
 		AAD53AE1218023B5000AFF58 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD53AE4218023B5000AFF58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAD53AE5218023B5000AFF58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AAD53AE7218023B5000AFF58 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AAD53AE8218023B5000AFF58 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AAD53AEB218023B5000AFF58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAD53AED218023B7000AFF58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD53AF0218023B7000AFF58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,26 @@
 		AAD53B04218023B7000AFF58 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD53B08218023B7000AFF58 /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		AAD53B0A218023B7000AFF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD53B162180243B000AFF58 /* TabbarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
+		AAD53B172180243B000AFF58 /* TabbarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
+		AAD53B22218024BD000AFF58 /* HomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageVC.h; sourceTree = "<group>"; };
+		AAD53B23218024BD000AFF58 /* HomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageVC.m; sourceTree = "<group>"; };
+		AAD53B25218024F4000AFF58 /* NewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		AAD53B26218024F4000AFF58 /* NewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		AAD53B2821802503000AFF58 /* CoinCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinCell.h; sourceTree = "<group>"; };
+		AAD53B2921802503000AFF58 /* CoinCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinCell.m; sourceTree = "<group>"; };
+		AAD53B3721803D37000AFF58 /* Smile intl-大莫豪城交易所 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Smile intl-大莫豪城交易所"; sourceTree = "<group>"; };
+		AAD53B3F21803D98000AFF58 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		AAD53B4021803D98000AFF58 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		AAD53B4221803DAA000AFF58 /* TradeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradeVC.h; sourceTree = "<group>"; };
+		AAD53B4321803DAA000AFF58 /* TradeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradeVC.m; sourceTree = "<group>"; };
+		AAD53B4521803DBD000AFF58 /* FranceCoinVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FranceCoinVC.h; sourceTree = "<group>"; };
+		AAD53B4621803DBD000AFF58 /* FranceCoinVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FranceCoinVC.m; sourceTree = "<group>"; };
+		AAD53B4921803DD6000AFF58 /* PropertyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyVC.h; sourceTree = "<group>"; };
+		AAD53B4A21803DD6000AFF58 /* PropertyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyVC.m; sourceTree = "<group>"; };
+		AAD53B4C21803DE1000AFF58 /* MineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineVC.h; sourceTree = "<group>"; };
+		AAD53B4D21803DE1000AFF58 /* MineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineVC.m; sourceTree = "<group>"; };
+		AAD53B4F21803DF6000AFF58 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +128,12 @@
 		AAD53AE3218023B5000AFF58 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				AAD53AE4218023B5000AFF58 /* AppDelegate.h */,
-				AAD53AE5218023B5000AFF58 /* AppDelegate.m */,
-				AAD53AE7218023B5000AFF58 /* ViewController.h */,
-				AAD53AE8218023B5000AFF58 /* ViewController.m */,
+				AAD53B4F21803DF6000AFF58 /* PrefixHeader.pch */,
+				AAD53B3B21803D6E000AFF58 /* BaseMVC */,
+				AAD53B3A21803D5C000AFF58 /* Login */,
+				AAD53B3921803D4C000AFF58 /* AppDelegate */,
+				AAD53B3621803D12000AFF58 /* Design_Photot */,
+				AAD53B1921802447000AFF58 /* templates */,
 				AAD53AEA218023B5000AFF58 /* Main.storyboard */,
 				AAD53AED218023B7000AFF58 /* Assets.xcassets */,
 				AAD53AEF218023B7000AFF58 /* LaunchScreen.storyboard */,
@@ -130,6 +159,246 @@
 				AAD53B0A218023B7000AFF58 /* Info.plist */,
 			);
 			path = DemoUITests;
+			sourceTree = "<group>";
+		};
+		AAD53B1921802447000AFF58 /* templates */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B1E2180248D000AFF58 /* HomePage */,
+				AAD53B1D21802478000AFF58 /* Trade */,
+				AAD53B1C21802469000AFF58 /* FranceCoin */,
+				AAD53B1B21802460000AFF58 /* Property */,
+				AAD53B1A21802451000AFF58 /* Mine */,
+			);
+			path = templates;
+			sourceTree = "<group>";
+		};
+		AAD53B1A21802451000AFF58 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B3521803D0A000AFF58 /* Models */,
+				AAD53B3421803D06000AFF58 /* Views */,
+				AAD53B3321802623000AFF58 /* Controllers */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AAD53B1B21802460000AFF58 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B4821803DC7000AFF58 /* Models */,
+				AAD53B32218025CD000AFF58 /* Views */,
+				AAD53B31218025C6000AFF58 /* Controllers */,
+			);
+			path = Property;
+			sourceTree = "<group>";
+		};
+		AAD53B1C21802469000AFF58 /* FranceCoin */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B30218025BC000AFF58 /* Models */,
+				AAD53B2F218025B8000AFF58 /* Views */,
+				AAD53B2E218025B1000AFF58 /* Controllers */,
+			);
+			path = FranceCoin;
+			sourceTree = "<group>";
+		};
+		AAD53B1D21802478000AFF58 /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B2D218025AB000AFF58 /* Models */,
+				AAD53B2C218025A6000AFF58 /* Views */,
+				AAD53B2B2180259F000AFF58 /* Controllers */,
+			);
+			path = Trade;
+			sourceTree = "<group>";
+		};
+		AAD53B1E2180248D000AFF58 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B21218024A8000AFF58 /* Models */,
+				AAD53B20218024A3000AFF58 /* Views */,
+				AAD53B1F2180249B000AFF58 /* Controllers */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		AAD53B1F2180249B000AFF58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B22218024BD000AFF58 /* HomePageVC.h */,
+				AAD53B23218024BD000AFF58 /* HomePageVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAD53B20218024A3000AFF58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B25218024F4000AFF58 /* NewsCell.h */,
+				AAD53B26218024F4000AFF58 /* NewsCell.m */,
+				AAD53B2821802503000AFF58 /* CoinCell.h */,
+				AAD53B2921802503000AFF58 /* CoinCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD53B21218024A8000AFF58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAD53B2B2180259F000AFF58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B4221803DAA000AFF58 /* TradeVC.h */,
+				AAD53B4321803DAA000AFF58 /* TradeVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAD53B2C218025A6000AFF58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD53B2D218025AB000AFF58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAD53B2E218025B1000AFF58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B4521803DBD000AFF58 /* FranceCoinVC.h */,
+				AAD53B4621803DBD000AFF58 /* FranceCoinVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAD53B2F218025B8000AFF58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD53B30218025BC000AFF58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAD53B31218025C6000AFF58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B4921803DD6000AFF58 /* PropertyVC.h */,
+				AAD53B4A21803DD6000AFF58 /* PropertyVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAD53B32218025CD000AFF58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD53B3321802623000AFF58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B4C21803DE1000AFF58 /* MineVC.h */,
+				AAD53B4D21803DE1000AFF58 /* MineVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAD53B3421803D06000AFF58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD53B3521803D0A000AFF58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAD53B3621803D12000AFF58 /* Design_Photot */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B3721803D37000AFF58 /* Smile intl-大莫豪城交易所 */,
+			);
+			path = Design_Photot;
+			sourceTree = "<group>";
+		};
+		AAD53B3921803D4C000AFF58 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53AE4218023B5000AFF58 /* AppDelegate.h */,
+				AAD53AE5218023B5000AFF58 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AAD53B3A21803D5C000AFF58 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B3F21803D98000AFF58 /* LoginVC.h */,
+				AAD53B4021803D98000AFF58 /* LoginVC.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AAD53B3B21803D6E000AFF58 /* BaseMVC */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B3E21803D82000AFF58 /* Models */,
+				AAD53B3D21803D7D000AFF58 /* Views */,
+				AAD53B3C21803D79000AFF58 /* Controllers */,
+			);
+			path = BaseMVC;
+			sourceTree = "<group>";
+		};
+		AAD53B3C21803D79000AFF58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD53B162180243B000AFF58 /* TabbarVC.h */,
+				AAD53B172180243B000AFF58 /* TabbarVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAD53B3D21803D7D000AFF58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD53B3E21803D82000AFF58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAD53B4821803DC7000AFF58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD53AF1218023B7000AFF58 /* LaunchScreen.storyboard in Resources */,
+				AAD53B3821803D37000AFF58 /* Smile intl-大莫豪城交易所 in Resources */,
 				AAD53AEE218023B7000AFF58 /* Assets.xcassets in Resources */,
 				AAD53AEC218023B5000AFF58 /* Main.storyboard in Resources */,
 			);
@@ -262,9 +532,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAD53AE9218023B5000AFF58 /* ViewController.m in Sources */,
 				AAD53AF4218023B7000AFF58 /* main.m in Sources */,
+				AAD53B27218024F4000AFF58 /* NewsCell.m in Sources */,
+				AAD53B24218024BD000AFF58 /* HomePageVC.m in Sources */,
+				AAD53B182180243B000AFF58 /* TabbarVC.m in Sources */,
+				AAD53B2A21802503000AFF58 /* CoinCell.m in Sources */,
+				AAD53B4421803DAA000AFF58 /* TradeVC.m in Sources */,
+				AAD53B4121803D98000AFF58 /* LoginVC.m in Sources */,
+				AAD53B4E21803DE1000AFF58 /* MineVC.m in Sources */,
+				AAD53B4721803DBD000AFF58 /* FranceCoinVC.m in Sources */,
 				AAD53AE6218023B5000AFF58 /* AppDelegate.m in Sources */,
+				AAD53B4B21803DD6000AFF58 /* PropertyVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +714,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +732,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

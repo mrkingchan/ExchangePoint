@@ -13,6 +13,8 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "Masonry_v1.1.0/Masonry.h"
 #define isiPhoneX  (([[UIScreen mainScreen] bounds].size.height) == 812.f ? 1 : 0 )
+#define kiPhoneXAll ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
+
 #import "UILabel+NNHExtension.h"
 #import "UIColor+NNHExtension.h"
 

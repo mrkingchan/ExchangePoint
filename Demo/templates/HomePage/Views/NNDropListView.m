@@ -22,7 +22,8 @@
 }
 
 - (instancetype)initWithArray:(NSArray *)titles complete:(void (^)(NSString * _Nonnull, NSInteger))complete {
-    if (self = [super initWithFrame:CGRectMake(0, isiPhoneX ? 88 + 90 + 45 : 64 + 135 + 24 , [UIScreen mainScreen].bounds.size.width, titles.count %4 == 0 ? titles.count /4 * 44:((titles.count / 4) + 1) * 44)]) {
+    if (self = [super initWithFrame:CGRectMake(0, kiPhoneXAll ? 88 + 90 + 45 : 64 + 135
+                                               , [UIScreen mainScreen].bounds.size.width, titles.count %4 == 0 ? titles.count /4 * 44:((titles.count / 4) + 1) * 44)]) {
         _complete = complete;
         _dataArray = titles;
         self.backgroundColor = [UIColor clearColor];

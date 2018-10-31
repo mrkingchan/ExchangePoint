@@ -41,6 +41,10 @@
     return UIStatusBarStyleDefault;
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self removeCurrentDropView];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kKlineBackColor ;

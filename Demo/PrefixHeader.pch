@@ -18,5 +18,6 @@
 #define kiPhoneX_Bottom_Height  (([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)?34:0)
 #import "UILabel+NNHExtension.h"
 #import "UIColor+NNHExtension.h"
+#import "CommonValue.h"
 
 #endif /* PrefixHeader_pch */

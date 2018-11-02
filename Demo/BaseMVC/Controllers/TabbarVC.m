@@ -29,9 +29,12 @@
                             [MineVC class]];
     NSMutableArray *navis = [NSMutableArray new];
     for (int i = 0 ; i < classNames.count; i ++) {
-        UIViewController *viewController = [self buildControllerWithClass:classNames[i]
+        /*UIViewController *viewController = [self buildControllerWithClass:classNames[i]
                                                                  titleStr:titles[i]
                                                               normalImage:[UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%d",i + 1]] selectedImage:[UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%d_s",i + 1]]];
+         */
+        UIViewController *viewController = kbuildViewControllerWithConfiguration(classNames[i], titles[i], [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%d",i + 1]], [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%d_s",i + 1]]);
+        
         UINavigationController *naviController = [[UINavigationController alloc] initWithRootViewController:viewController];
         [navis addObject:naviController];
     }

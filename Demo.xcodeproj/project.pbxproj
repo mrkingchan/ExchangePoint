@@ -215,6 +215,7 @@
 		AA059C8221885A2300DD2EC4 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
 		AA059C8321885A2300DD2EC4 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		AA059C8421885A2300DD2EC4 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		AA059C97218C48E800DD2EC4 /* CommonValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonValue.h; sourceTree = "<group>"; };
 		AAD53AE1218023B5000AFF58 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD53AE4218023B5000AFF58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAD53AE5218023B5000AFF58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -596,6 +597,7 @@
 				AAD53AEF218023B7000AFF58 /* LaunchScreen.storyboard */,
 				AAD53AF2218023B7000AFF58 /* Info.plist */,
 				AAD53AF3218023B7000AFF58 /* main.m */,
+				AA059C97218C48E800DD2EC4 /* CommonValue.h */,
 			);
 			path = Demo;
 			sourceTree = "<group>";

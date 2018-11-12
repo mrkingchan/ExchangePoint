@@ -19,6 +19,10 @@
 
 @implementation TabbarVC
 
++ (void)initialize {
+    [UITabBar appearance].translucent = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSArray *titles = @[@"首页",@"交易",@"法币",@"资产",@"我的"];
@@ -36,6 +40,7 @@
         UIViewController *viewController = kbuildViewControllerWithConfiguration(classNames[i], titles[i], [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%d",i + 1]], [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%d_s",i + 1]]);
         
         UINavigationController *naviController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        naviController.navigationItem.title = titles[i];
         [navis addObject:naviController];
     }
     self.viewControllers = navis;
@@ -56,6 +61,7 @@
 //    NSAssert([className isSubclassOfClass:[UIViewController class]], @"className must be a subClass of UIViewController!");
     UIViewController *viewController = [className new];
     viewController.navigationItem.title = title;
+    viewController.title = title;
     UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:title
                                                        image:[normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     viewController.tabBarItem = item;

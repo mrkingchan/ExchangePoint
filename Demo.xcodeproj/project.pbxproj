@@ -98,6 +98,23 @@
 		AA7EEE642199269F000E7F34 /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE5C2199269F000E7F34 /* MJPhotoBrowser.m */; };
 		AA7EEE67219926EE000E7F34 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE66219926EE000E7F34 /* ProductCell.m */; };
 		AA7EEE6A21992A9C000E7F34 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE6921992A9C000E7F34 /* HeaderView.m */; };
+		AA7EEE6D21997059000E7F34 /* BannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE6C21997059000E7F34 /* BannerModel.m */; };
+		AA7EEE70219970DA000E7F34 /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE6F219970DA000E7F34 /* ProductModel.m */; };
+		AA7EEE7321997138000E7F34 /* ModuleBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE7221997138000E7F34 /* ModuleBannerModel.m */; };
+		AA7EEE762199721A000E7F34 /* ModuleBannerArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE752199721A000E7F34 /* ModuleBannerArrayModel.m */; };
+		AA7EEE8E219972A7000E7F34 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE7B219972A7000E7F34 /* MJPropertyType.m */; };
+		AA7EEE8F219972A7000E7F34 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE7E219972A7000E7F34 /* NSObject+MJKeyValue.m */; };
+		AA7EEE90219972A7000E7F34 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE7F219972A7000E7F34 /* MJProperty.m */; };
+		AA7EEE91219972A7000E7F34 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE81219972A7000E7F34 /* NSObject+MJCoding.m */; };
+		AA7EEE92219972A7000E7F34 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE83219972A7000E7F34 /* MJExtensionConst.m */; };
+		AA7EEE93219972A7000E7F34 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE84219972A7000E7F34 /* NSObject+MJProperty.m */; };
+		AA7EEE94219972A7000E7F34 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE86219972A7000E7F34 /* NSObject+MJClass.m */; };
+		AA7EEE95219972A7000E7F34 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE87219972A7000E7F34 /* NSString+MJExtension.m */; };
+		AA7EEE96219972A7000E7F34 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE88219972A7000E7F34 /* MJPropertyKey.m */; };
+		AA7EEE97219972A7000E7F34 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA7EEE8C219972A7000E7F34 /* Info.plist */; };
+		AA7EEE98219972A7000E7F34 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE8D219972A7000E7F34 /* MJFoundation.m */; };
+		AA7EEE9B21997370000E7F34 /* ProductArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE9A21997370000E7F34 /* ProductArrayModel.m */; };
+		AA7EEE9E21997423000E7F34 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE9D21997423000E7F34 /* SectionHeaderView.m */; };
 		AAD53AE6218023B5000AFF58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53AE5218023B5000AFF58 /* AppDelegate.m */; };
 		AAD53AEC218023B5000AFF58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD53AEA218023B5000AFF58 /* Main.storyboard */; };
 		AAD53AEE218023B7000AFF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD53AED218023B7000AFF58 /* Assets.xcassets */; };
@@ -324,6 +341,40 @@
 		AA7EEE66219926EE000E7F34 /* ProductCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		AA7EEE6821992A9C000E7F34 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		AA7EEE6921992A9C000E7F34 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		AA7EEE6B21997059000E7F34 /* BannerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerModel.h; sourceTree = "<group>"; };
+		AA7EEE6C21997059000E7F34 /* BannerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerModel.m; sourceTree = "<group>"; };
+		AA7EEE6E219970DA000E7F34 /* ProductModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductModel.h; sourceTree = "<group>"; };
+		AA7EEE6F219970DA000E7F34 /* ProductModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductModel.m; sourceTree = "<group>"; };
+		AA7EEE7121997138000E7F34 /* ModuleBannerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleBannerModel.h; sourceTree = "<group>"; };
+		AA7EEE7221997138000E7F34 /* ModuleBannerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleBannerModel.m; sourceTree = "<group>"; };
+		AA7EEE742199721A000E7F34 /* ModuleBannerArrayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleBannerArrayModel.h; sourceTree = "<group>"; };
+		AA7EEE752199721A000E7F34 /* ModuleBannerArrayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleBannerArrayModel.m; sourceTree = "<group>"; };
+		AA7EEE78219972A7000E7F34 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		AA7EEE79219972A7000E7F34 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		AA7EEE7A219972A7000E7F34 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		AA7EEE7B219972A7000E7F34 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		AA7EEE7C219972A7000E7F34 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		AA7EEE7D219972A7000E7F34 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		AA7EEE7E219972A7000E7F34 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		AA7EEE7F219972A7000E7F34 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		AA7EEE80219972A7000E7F34 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		AA7EEE81219972A7000E7F34 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		AA7EEE82219972A7000E7F34 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		AA7EEE83219972A7000E7F34 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		AA7EEE84219972A7000E7F34 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		AA7EEE85219972A7000E7F34 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		AA7EEE86219972A7000E7F34 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		AA7EEE87219972A7000E7F34 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		AA7EEE88219972A7000E7F34 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		AA7EEE89219972A7000E7F34 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		AA7EEE8A219972A7000E7F34 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		AA7EEE8B219972A7000E7F34 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		AA7EEE8C219972A7000E7F34 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA7EEE8D219972A7000E7F34 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		AA7EEE9921997370000E7F34 /* ProductArrayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductArrayModel.h; sourceTree = "<group>"; };
+		AA7EEE9A21997370000E7F34 /* ProductArrayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductArrayModel.m; sourceTree = "<group>"; };
+		AA7EEE9C21997423000E7F34 /* SectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
+		AA7EEE9D21997423000E7F34 /* SectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
 		AAD53AE1218023B5000AFF58 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD53AE4218023B5000AFF58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAD53AE5218023B5000AFF58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -768,6 +819,36 @@
 			path = MJPhotoBrowser;
 			sourceTree = "<group>";
 		};
+		AA7EEE77219972A7000E7F34 /* MJExtension_v3.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				AA7EEE78219972A7000E7F34 /* MJPropertyKey.h */,
+				AA7EEE79219972A7000E7F34 /* NSObject+MJClass.h */,
+				AA7EEE7A219972A7000E7F34 /* NSString+MJExtension.h */,
+				AA7EEE7B219972A7000E7F34 /* MJPropertyType.m */,
+				AA7EEE7C219972A7000E7F34 /* NSObject+MJProperty.h */,
+				AA7EEE7D219972A7000E7F34 /* MJExtensionConst.h */,
+				AA7EEE7E219972A7000E7F34 /* NSObject+MJKeyValue.m */,
+				AA7EEE7F219972A7000E7F34 /* MJProperty.m */,
+				AA7EEE80219972A7000E7F34 /* MJFoundation.h */,
+				AA7EEE81219972A7000E7F34 /* NSObject+MJCoding.m */,
+				AA7EEE82219972A7000E7F34 /* MJExtension.h */,
+				AA7EEE83219972A7000E7F34 /* MJExtensionConst.m */,
+				AA7EEE84219972A7000E7F34 /* NSObject+MJProperty.m */,
+				AA7EEE85219972A7000E7F34 /* MJPropertyType.h */,
+				AA7EEE86219972A7000E7F34 /* NSObject+MJClass.m */,
+				AA7EEE87219972A7000E7F34 /* NSString+MJExtension.m */,
+				AA7EEE88219972A7000E7F34 /* MJPropertyKey.m */,
+				AA7EEE89219972A7000E7F34 /* MJProperty.h */,
+				AA7EEE8A219972A7000E7F34 /* NSObject+MJKeyValue.h */,
+				AA7EEE8B219972A7000E7F34 /* NSObject+MJCoding.h */,
+				AA7EEE8C219972A7000E7F34 /* Info.plist */,
+				AA7EEE8D219972A7000E7F34 /* MJFoundation.m */,
+			);
+			name = MJExtension_v3.0.0;
+			path = ../../ios_amu/DMHCExchange/DMHCExchange/Classes/Main/Lib/MJExtension_v3.0.0;
+			sourceTree = "<group>";
+		};
 		AAD53AD8218023B5000AFF58 = {
 			isa = PBXGroup;
 			children = (
@@ -795,6 +876,7 @@
 				AA059C5C2188572C00DD2EC4 /* UILabel+NNHExtension.m */,
 				AA059C5F2188587100DD2EC4 /* UIColor+NNHExtension.h */,
 				AA059C5E2188587000DD2EC4 /* UIColor+NNHExtension.m */,
+				AA7EEE77219972A7000E7F34 /* MJExtension_v3.0.0 */,
 				AA7EEE4D2199269F000E7F34 /* MJPhotoBrowser */,
 				AA7EEDFA21992345000E7F34 /* SDCycleScrollView */,
 				AA7EEE0A21992346000E7F34 /* SDWebImage_v4.1.0 */,
@@ -949,6 +1031,8 @@
 				AA7EEE66219926EE000E7F34 /* ProductCell.m */,
 				AA7EEE6821992A9C000E7F34 /* HeaderView.h */,
 				AA7EEE6921992A9C000E7F34 /* HeaderView.m */,
+				AA7EEE9C21997423000E7F34 /* SectionHeaderView.h */,
+				AA7EEE9D21997423000E7F34 /* SectionHeaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -956,6 +1040,16 @@
 		AAD53B2D218025AB000AFF58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA7EEE6B21997059000E7F34 /* BannerModel.h */,
+				AA7EEE6C21997059000E7F34 /* BannerModel.m */,
+				AA7EEE6E219970DA000E7F34 /* ProductModel.h */,
+				AA7EEE6F219970DA000E7F34 /* ProductModel.m */,
+				AA7EEE7121997138000E7F34 /* ModuleBannerModel.h */,
+				AA7EEE7221997138000E7F34 /* ModuleBannerModel.m */,
+				AA7EEE742199721A000E7F34 /* ModuleBannerArrayModel.h */,
+				AA7EEE752199721A000E7F34 /* ModuleBannerArrayModel.m */,
+				AA7EEE9921997370000E7F34 /* ProductArrayModel.h */,
+				AA7EEE9A21997370000E7F34 /* ProductArrayModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1199,6 +1293,7 @@
 				AA059C2B218856CC00DD2EC4 /* 指标公式.md in Resources */,
 				AAD53AEC218023B5000AFF58 /* Main.storyboard in Resources */,
 				AA059C29218856CC00DD2EC4 /* MA-EMA-MACD介绍.md in Resources */,
+				AA7EEE97219972A7000E7F34 /* Info.plist in Resources */,
 				AA059C2D218856CC00DD2EC4 /* KDJ介绍.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1229,14 +1324,17 @@
 				AAD53AF4218023B7000AFF58 /* main.m in Sources */,
 				AA7EEE3B21992346000E7F34 /* MKAnnotationView+WebCache.m in Sources */,
 				AA7EEE3D21992346000E7F34 /* SDWebImageDecoder.m in Sources */,
+				AA7EEE6D21997059000E7F34 /* BannerModel.m in Sources */,
 				AA7EEE3921992346000E7F34 /* TAAbstractDotView.m in Sources */,
 				AA059BDD218856BD00DD2EC4 /* NNDropListView.m in Sources */,
 				AA7EEE4921992346000E7F34 /* SDImageCacheConfig.m in Sources */,
 				AA059C32218856CC00DD2EC4 /* Y_MALine.m in Sources */,
 				AA059C2E218856CC00DD2EC4 /* Y_KLineVolumePositionModel.m in Sources */,
 				AA059C602188587100DD2EC4 /* UIColor+NNHExtension.m in Sources */,
+				AA7EEE93219972A7000E7F34 /* NSObject+MJProperty.m in Sources */,
 				AA7EEE3721992346000E7F34 /* TAPageControl.m in Sources */,
 				AA059C28218856CC00DD2EC4 /* Y_KLinePositionModel.m in Sources */,
+				AA7EEE91219972A7000E7F34 /* NSObject+MJCoding.m in Sources */,
 				AA7EEE622199269F000E7F34 /* MJPhotoProgressView.m in Sources */,
 				AA7EEE4121992346000E7F34 /* UIImage+MultiFormat.m in Sources */,
 				AA7EEE642199269F000E7F34 /* MJPhotoBrowser.m in Sources */,
@@ -1252,8 +1350,10 @@
 				AA059C8D21885A2300DD2EC4 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				AA7EEE4721992346000E7F34 /* UIImageView+WebCache.m in Sources */,
 				AAD53B27218024F4000AFF58 /* NewsCell.m in Sources */,
+				AA7EEE9B21997370000E7F34 /* ProductArrayModel.m in Sources */,
 				AA059C8821885A2300DD2EC4 /* AFURLRequestSerialization.m in Sources */,
 				AA059C57218856E300DD2EC4 /* MASConstraint.m in Sources */,
+				AA7EEE7321997138000E7F34 /* ModuleBannerModel.m in Sources */,
 				AA059C8921885A2300DD2EC4 /* AFNetworkReachabilityManager.m in Sources */,
 				AAD53B24218024BD000AFF58 /* HomePageVC.m in Sources */,
 				AA059C2C218856CC00DD2EC4 /* Y_KLineGroupModel.m in Sources */,
@@ -1262,11 +1362,14 @@
 				AA059C50218856E300DD2EC4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				AA059C33218856CC00DD2EC4 /* Y_KLine.m in Sources */,
 				AA7EEE3321992346000E7F34 /* SDCycleScrollView.m in Sources */,
+				AA7EEE9E21997423000E7F34 /* SectionHeaderView.m in Sources */,
 				AAD53B182180243B000AFF58 /* TabbarVC.m in Sources */,
 				AAD53B2A21802503000AFF58 /* CoinCell.m in Sources */,
 				AA059C8B21885A2300DD2EC4 /* UIProgressView+AFNetworking.m in Sources */,
+				AA7EEE90219972A7000E7F34 /* MJProperty.m in Sources */,
 				AA7EEE67219926EE000E7F34 /* ProductCell.m in Sources */,
 				AA059C34218856CC00DD2EC4 /* Y_StockChartSegmentView.m in Sources */,
+				AA7EEE98219972A7000E7F34 /* MJFoundation.m in Sources */,
 				AAD53B4421803DAA000AFF58 /* TradeVC.m in Sources */,
 				AAD53B4121803D98000AFF58 /* LoginVC.m in Sources */,
 				AA059C8E21885A2300DD2EC4 /* UIImageView+AFNetworking.m in Sources */,
@@ -1286,6 +1389,8 @@
 				AA059C51218856E300DD2EC4 /* ViewController+MASAdditions.m in Sources */,
 				AA7EEE3421992346000E7F34 /* UIView+SDExtension.m in Sources */,
 				AA059C55218856E300DD2EC4 /* NSArray+MASAdditions.m in Sources */,
+				AA7EEE96219972A7000E7F34 /* MJPropertyKey.m in Sources */,
+				AA7EEE92219972A7000E7F34 /* MJExtensionConst.m in Sources */,
 				AAD53B4E21803DE1000AFF58 /* MineVC.m in Sources */,
 				AA059C2F218856CC00DD2EC4 /* Y_KLineVolumeView.m in Sources */,
 				AA059C26218856CC00DD2EC4 /* Y_KLineAccessory.m in Sources */,
@@ -1299,12 +1404,16 @@
 				AA059C20218856CC00DD2EC4 /* Y_StockChartView.m in Sources */,
 				AA059C9221885A2300DD2EC4 /* AFAutoPurgingImageCache.m in Sources */,
 				AA059C1E218856CC00DD2EC4 /* Y_StockChartGlobalVariable.m in Sources */,
+				AA7EEE94219972A7000E7F34 /* NSObject+MJClass.m in Sources */,
 				AA7EEE612199269F000E7F34 /* MJPhotoToolbar.m in Sources */,
 				AA7EEE6A21992A9C000E7F34 /* HeaderView.m in Sources */,
 				AA7EEE5E2199269F000E7F34 /* MJPhotoView.m in Sources */,
 				AA7EEE4C21992346000E7F34 /* UIButton+WebCache.m in Sources */,
+				AA7EEE8F219972A7000E7F34 /* NSObject+MJKeyValue.m in Sources */,
+				AA7EEE8E219972A7000E7F34 /* MJPropertyType.m in Sources */,
 				AA059C9321885A2300DD2EC4 /* AFImageDownloader.m in Sources */,
 				AA059C24218856CC00DD2EC4 /* Y_VolumeMAView.m in Sources */,
+				AA7EEE70219970DA000E7F34 /* ProductModel.m in Sources */,
 				AA7EEE3C21992346000E7F34 /* SDWebImageManager.m in Sources */,
 				AA059C31218856CC00DD2EC4 /* Y_KLineMainView.m in Sources */,
 				AA7EEE3821992346000E7F34 /* TAAnimatedDotView.m in Sources */,
@@ -1319,6 +1428,8 @@
 				AAD53B4B21803DD6000AFF58 /* PropertyVC.m in Sources */,
 				AA059C2A218856CC00DD2EC4 /* Y_KLineModel.m in Sources */,
 				AA7EEE3A21992346000E7F34 /* UIImage+WebP.m in Sources */,
+				AA7EEE95219972A7000E7F34 /* NSString+MJExtension.m in Sources */,
+				AA7EEE762199721A000E7F34 /* ModuleBannerArrayModel.m in Sources */,
 				AA059C8521885A2300DD2EC4 /* AFURLResponseSerialization.m in Sources */,
 				AA059C21218856CC00DD2EC4 /* Y_KLineMAView.m in Sources */,
 			);

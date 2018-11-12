@@ -44,7 +44,10 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self removeCurrentDropView];
+    [_timer invalidate];
+    _timer= nil;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kKlineBackColor ;

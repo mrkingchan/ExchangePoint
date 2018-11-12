@@ -19,5 +19,7 @@
 #import "UILabel+NNHExtension.h"
 #import "UIColor+NNHExtension.h"
 #import "CommonValue.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
 
 #endif /* PrefixHeader_pch */

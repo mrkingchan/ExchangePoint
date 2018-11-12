@@ -11,11 +11,19 @@
 #import "UIImageView+WebCache.h"
 #import "ProductCell.h"
 #import "HeaderView.h"
+#import "BannerModel.h"
+#import "ModuleBannerArrayModel.h"
+#import "ModuleBannerModel.h"
+#import "ProductArrayModel.h"
+#import "SectionHeaderView.h"
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
 @interface TradeVC () <UICollectionViewDelegate,UICollectionViewDataSource> {
     NSMutableDictionary *_jsonDic;
     UIView *_headerView;
     UICollectionView *_collectionView;
+    NSMutableArray *_sectionViewArray;
 }
 
 @end
@@ -148,7 +156,24 @@
         }
        }];
     
-    _headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
+    NSArray <BannerModel *> *bannerArray = [BannerModel mj_objectArrayWithKeyValuesArray:_jsonDic[@"data"][@"banner"]];
+    
+    ModuleBannerArrayModel *moduleArrayModel = [ModuleBannerArrayModel mj_objectWithKeyValues:_jsonDic[@"data"][@"modulebanner"][0]];
+    
+    ProductArrayModel *productArrayModel = [ProductArrayModel mj_objectWithKeyValues:_jsonDic[@"data"][@"proData"]];
+    
+    _sectionViewArray = @[].mutableCopy;
+
+    for (int i = 0; i < 3; i ++) {
+        SectionHeaderView *headerView = [SectionHeaderView sectionHeaderViewWithBannerArray:bannerArray
+                                                                        bannerArrayComplete:^(NSInteger index, BannerModel * _Nonnull model) {
+                                                                            NSLog(@"你点击的是%zd",index);
+                                                                        } moduleArray:moduleArrayModel moduleComplete:^(NSInteger index, ModuleBannerModel * _Nonnull model) {
+                                                                           NSLog(@"你点击的是%zd",index);
+                                                                        } productListModel:productArrayModel];
+        [_sectionViewArray addObject:headerView];
+    }
+    /*_headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
     NSMutableArray *imageArray = [NSMutableArray new];
     [imageArray addObjectsFromArray:[_jsonDic[@"data"][@"banner"] valueForKey:@"thumb"]];
     SDCycleScrollView *bannerView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero imageURLStringsGroup:imageArray];
@@ -168,7 +193,6 @@
         make.top.equalTo(bannerView.mas_bottom);
         make.height.equalTo(@150);
     }];
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
     for (int i = 0 ; i < 3; i ++) {
         UIImageView *productView = [UIImageView new];
         productView.clipsToBounds = YES;
@@ -181,13 +205,16 @@
             make.height.equalTo(i == 0 ? @(150):@(75));
         }];
         [productView sd_setImageWithURL:[NSURL URLWithString:_jsonDic[@"data"][@"modulebanner"][0][@"banner"][i][@"thumb"]] placeholderImage:[UIImage  imageNamed:@"tabbar_4"]];
-    }
+    }*/
+    
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.minimumLineSpacing = layout.minimumInteritemSpacing = 5.0;
     layout.sectionInset = UIEdgeInsetsMake(5,5,5,5);
     layout.itemSize = CGSizeMake((kScreenWidth - 15)/2.0, (kScreenWidth - 15)/2.0);
-    layout.headerReferenceSize = CGSizeMake(kScreenWidth, 300);
+//    layout.headerReferenceSize = CGSizeMake(kScreenWidth, 300);
+    layout.headerReferenceSize = CGSizeMake(kScreenWidth, 325);
+
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, self.view.frame.size.height) collectionViewLayout:layout];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
@@ -213,7 +240,9 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if ([kind  isEqualToString:UICollectionElementKindSectionHeader]) {
         HeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:[HeaderView reuseIdentifier] forIndexPath:indexPath];
-        [header addSubview:_headerView];
+        
+        [header addSubview: ((SectionHeaderView *)_sectionViewArray[indexPath.section])];
+        /*[header addSubview:_headerView];*/
         return header;
     }else {
         return nil;

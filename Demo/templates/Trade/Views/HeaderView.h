@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HeaderView : UICollectionReusableView
 
 
++ (NSString *)reuseIdentifier;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

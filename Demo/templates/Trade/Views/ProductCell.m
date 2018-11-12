@@ -46,4 +46,8 @@
     [_productImage sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"tabbar_4"]];
     _name.text = name;
 }
+
++ (NSString *)cellIdentifier {
+    return NSStringFromClass([self class]);
+}
 @end

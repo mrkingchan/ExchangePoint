@@ -193,8 +193,9 @@
     _collectionView.delegate = self;
     _collectionView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_collectionView];
-    [_collectionView registerClass:ProductCell.class forCellWithReuseIdentifier:NSStringFromClass(ProductCell.class)];
-    [_collectionView  registerClass:[HeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([HeaderView class])];
+    [_collectionView registerClass:ProductCell.class forCellWithReuseIdentifier:
+     [ProductCell cellIdentifier]];
+    [_collectionView  registerClass:[HeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[HeaderView reuseIdentifier]];
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
@@ -211,7 +212,7 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if ([kind  isEqualToString:UICollectionElementKindSectionHeader]) {
-        HeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass([HeaderView class]) forIndexPath:indexPath];
+        HeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:[HeaderView reuseIdentifier] forIndexPath:indexPath];
         [header addSubview:_headerView];
         return header;
     }else {
@@ -221,7 +222,7 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    ProductCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(ProductCell.class) forIndexPath:indexPath];
+    ProductCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[ProductCell cellIdentifier] forIndexPath:indexPath];
     [cell configureWithImageUrl:_jsonDic[@"data"][@"proData"][@"list"][indexPath.row][@"thumb"] name:_jsonDic[@"data"][@"proData"][@"list"][indexPath.row][@"productname"]];
     return cell;
 }

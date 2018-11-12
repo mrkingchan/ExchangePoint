@@ -16,4 +16,8 @@
     }
     return self;
 }
+
++ (NSString *)reuseIdentifier {
+    return NSStringFromClass([self class]);
+}
 @end

@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)configureWithImageUrl:(NSString *)urlStr name:(NSString *)name;
 
++ (NSString *)cellIdentifier;
+
 @end
 
 NS_ASSUME_NONNULL_END

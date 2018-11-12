@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ProductCell : UICollectionViewCell
 
 
-- (void)configureWithImageUrl:(NSString *)urlStr;
+- (void)configureWithImageUrl:(NSString *)urlStr name:(NSString *)name;
 
 @end
 

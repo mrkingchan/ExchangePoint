@@ -222,7 +222,7 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ProductCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(ProductCell.class) forIndexPath:indexPath];
-    [cell configureWithImageUrl:_jsonDic[@"data"][@"proData"][@"list"][indexPath.row][@"thumb"]];
+    [cell configureWithImageUrl:_jsonDic[@"data"][@"proData"][@"list"][indexPath.row][@"thumb"] name:_jsonDic[@"data"][@"proData"][@"list"][indexPath.row][@"productname"]];
     return cell;
 }
 @end

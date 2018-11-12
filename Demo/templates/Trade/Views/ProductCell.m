@@ -11,6 +11,7 @@
 
 @interface ProductCell() {
     UIImageView *_productImage;
+    UILabel *_name;
 }
 
 @end
@@ -21,15 +22,28 @@
         _productImage = [UIImageView new];
         [self addSubview:_productImage];
         [_productImage mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self);
+            make.left.right.top.equalTo(self);
+            make.height.equalTo(@(self.frame.size.height - 30));
         }];
+        _name = [UILabel new];
+        _name.textAlignment = 1;
+        _name.textColor = [UIColor blackColor];
+        _name.font = [UIFont systemFontOfSize:15];
+        [self addSubview:_name];
+        [_name mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.equalTo(self);
+            make.top.equalTo(_productImage.mas_bottom);
+            make.height.equalTo(@30);
+        }];
+        
     }
     return self;
 }
 
 #pragma mark - private Method
 
--(void)configureWithImageUrl:(NSString *)urlStr {
+-(void)configureWithImageUrl:(NSString *)urlStr name:(NSString *)name{
     [_productImage sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"tabbar_4"]];
+    _name.text = name;
 }
 @end

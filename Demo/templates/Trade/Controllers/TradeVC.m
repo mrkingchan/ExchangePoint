@@ -205,6 +205,10 @@
     return [_jsonDic[@"data"][@"proData"][@"list"] count];
 }
 
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return  3;
+}
+
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if ([kind  isEqualToString:UICollectionElementKindSectionHeader]) {
         HeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass([HeaderView class]) forIndexPath:indexPath];

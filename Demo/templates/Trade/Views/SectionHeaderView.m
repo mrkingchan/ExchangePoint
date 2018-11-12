@@ -62,6 +62,7 @@
             make.top.equalTo(_bannerView.mas_bottom);
             make.height.equalTo(@150);
         }];
+        CGFloat itemW = (kScreenWidth - 15)/2.0;
         for (int i = 0 ; i < _moduleModel.banner.count; i ++) {
             UIImageView *productView = [UIImageView new];
             productView.clipsToBounds = YES;
@@ -69,13 +70,13 @@
             [containerView addSubview:productView];
             containerView.userInteractionEnabled = YES;
             [productView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.left.equalTo(containerView.mas_left).offset(i == 0 ? kScreenWidth/ 2.0:0);
+                make.left.equalTo(containerView.mas_left).offset(i == 0 ?5:itemW + 10);
                 make.top.equalTo(containerView.mas_top).offset(i<2? 0:75);
-                make.width.equalTo(@(kScreenWidth/2));
+                make.width.equalTo(@(itemW));
                 make.height.equalTo(i == 0 ? @(150):@(75));
-                ModuleBannerModel *temModel = moduleModel.banner[i];
-                [productView  sd_setImageWithURL:[NSURL URLWithString:temModel.thumb] placeholderImage:[UIImage imageNamed:@"tabbar_4"]];
             }];
+            ModuleBannerModel *temModel = moduleModel.banner[i];
+            [productView  sd_setImageWithURL:[NSURL URLWithString:temModel.thumb] placeholderImage:[UIImage imageNamed:@"tabbar_4"]];
             productView.userInteractionEnabled = YES;
             productView.tag = 10000 + i;
             UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(buttonAction:)];

@@ -30,6 +30,11 @@
 
 @implementation TradeVC
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -42,9 +47,9 @@
                           @"id":@"2",
                           @"type":@"1",
                           @"bname":@"中秋佳节",
-                          @"thumb":@"https: //wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-09-14/1536907126bk861.jpg",
+                          @"thumb":@"https://wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-09-14/1536907126bk861.jpg",
                           @"urltype":@"2",
-                          @"url":@"http: //www.niuniuhuiapp.net: 31014/active/active/zhongqiu",
+                          @"url":@"http: //www.niuniuhuiapp.net:31014/active/active/zhongqiu",
                           @"addtime":@"2018-09-14 14: 38: 57",
                           @"sort":@"1",
                           @"menuid":@"1"
@@ -53,9 +58,9 @@
                           @"id":@"1",
                           @"type":@"1",
                           @"bname":@"中秋佳节",
-                          @"thumb":@"https: //wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-09-14/1536907126bk861.jpg",
+                          @"thumb":@"https://wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-09-14/1536907126bk861.jpg",
                           @"urltype":@"2",
-                          @"url":@"http: //www.niuniuhuiapp.net: 31014/active/active/zhongqiu",
+                          @"url":@"http://www.niuniuhuiapp.net:31014/active/active/zhongqiu",
                           @"addtime":@"2018-09-14 14: 38: 57",
                           @"sort":@"1",
                           @"menuid":@"1"
@@ -67,7 +72,7 @@
                             @"prouctprice":@"0.02",
                             @"productname":@"liudan002-测试",
                             @"id":@"15316",
-                            @"thumb":@"https: //wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-10-15/1539571375au206.png?x-oss-process=image/quality,q_80",
+                            @"thumb":@"https://wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-10-15/1539571375au206.png?x-oss-process=image/quality,q_80",
                             @"follow_num":@""
                          },
                         @{
@@ -116,7 +121,7 @@
                             @"prouctprice":@"100.00",
                             @"productname":@"测试新分润6",
                             @"id":@"288",
-                            @"thumb":@"https: //wfcc.oss-cn-shenzhen.aliyuncs.com/NNH/images/2017-09-26/1506393414cu725.jpg?x-oss-process=image/quality,q_80",
+                            @"thumb":@"https://wfcc.oss-cn-shenzhen.aliyuncs.com/NNH/images/2017-09-26/1506393414cu725.jpg?x-oss-process=image/quality,q_80",
                             @"follow_num":@""
                          }],
                @"total":@"8",
@@ -131,21 +136,21 @@
                                 @"banner": @[
                                            @{
                                                @"bname":@"近期拍卖",
-                                               @"thumb":@"https: //wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-08-14/1534258725ec925.jpg",
+                                               @"thumb":@"https://wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-08-14/1534258725ec925.jpg",
                                                @"urltype":@"-1",
                                                @"url":@"#",
                                                @"sort":@"1"
                                             },
                                            @{
                                                @"bname":@"展览活动",
-                                               @"thumb":@"https: //wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-08-14/1534258725ec925.jpg",
+                                               @"thumb":@"https://wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-08-14/1534258725ec925.jpg",
                                                @"urltype":@"-1",
                                                @"url":@"#",
                                                @"sort":@"2"
                                             },
                                            @{
                                                @"bname":@"艺术品投资",
-                                               @"thumb":@"https: //wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-08-14/1534258725ec925.jpg",
+                                               @"thumb":@"https://wfcc.oss-cn-shenzhen.aliyuncs.com/wfcc_mall/images/2018-08-14/1534258725ec925.jpg",
                                                @"urltype":@"-1",
                                                @"url":@"#",
                                                @"sort":@"3"
@@ -206,7 +211,6 @@
         }];
         [productView sd_setImageWithURL:[NSURL URLWithString:_jsonDic[@"data"][@"modulebanner"][0][@"banner"][i][@"thumb"]] placeholderImage:[UIImage  imageNamed:@"tabbar_4"]];
     }*/
-    
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.minimumLineSpacing = layout.minimumInteritemSpacing = 5.0;

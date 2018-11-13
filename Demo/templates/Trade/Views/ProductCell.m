@@ -8,7 +8,7 @@
 
 #import "ProductCell.h"
 #import "UIImageView+WebCache.h"
-
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
 @interface ProductCell() {
     UIImageView *_productImage;
     UILabel *_name;
@@ -25,6 +25,8 @@
             make.left.right.top.equalTo(self);
             make.height.equalTo(@(self.frame.size.height - 30));
         }];
+        _productImage.clipsToBounds = YES;
+        _productImage.layer.cornerRadius = 5.0;
         _name = [UILabel new];
         _name.textAlignment = 1;
         _name.textColor = [UIColor blackColor];
@@ -48,11 +50,23 @@
 }
 
 - (void)configureCellWithData:(ProductModel *)model {
-    [_productImage sd_setImageWithURL:[NSURL URLWithString:model.thumb] placeholderImage:[UIImage imageNamed:@"tabbar_4"]];
+    [_productImage sd_setImageWithURL:[NSURL URLWithString:model.thumb] placeholderImage:[[self class] imageWithColor:kRandomColor size:self.frame.size]];
     _name.text = model.productname;
 }
 
 + (NSString *)cellIdentifier {
     return NSStringFromClass([self class]);
+}
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
+    if (!color || size.width <= 0 || size.height <= 0) return nil;
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    CGContextFillRect(context, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
 }
 @end

@@ -211,7 +211,7 @@
         [containerView addSubview:productView];
         [productView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(containerView.mas_left).offset(i == 0 ? kScreenWidth/ 2.0:0);
-            make.top.equalTo(containerView.mas_top).offset(i<2? 0:75);
+             make.top.equalTo(containerView.mas_top).offset(i<2? 0:75);
             make.width.equalTo(@(kScreenWidth/2));
             make.height.equalTo(i == 0 ? @(150):@(75));
         }];

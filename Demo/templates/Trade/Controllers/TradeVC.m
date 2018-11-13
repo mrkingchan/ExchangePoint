@@ -295,4 +295,9 @@
     return cell;
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    SectionModel * model = _dataArray[indexPath.section];
+    ProductModel *product = model.prodata.list[indexPath.row];
+}
+
 @end

@@ -13,7 +13,7 @@
 
 +(NSDictionary *)mj_objectClassInArray {
     return @{@"banner":
-                 @"ModuleBannerModel"};
+                 NSStringFromClass([ModuleBannerModel class])};
 }
 
 @end

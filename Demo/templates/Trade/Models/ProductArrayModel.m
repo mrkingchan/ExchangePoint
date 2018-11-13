@@ -11,6 +11,6 @@
 @implementation ProductArrayModel
 
 + (NSDictionary *)mj_objectClassInArray {
-    return @{@"list":@"ProductModel"};
+    return @{@"list":NSStringFromClass([ProductModel class])};
 }
 @end

@@ -16,6 +16,7 @@
 #import "ModuleBannerModel.h"
 #import "ProductArrayModel.h"
 #import "SectionHeaderView.h"
+#import "SectionModel.h"
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
@@ -23,7 +24,8 @@
     NSMutableDictionary *_jsonDic;
     UIView *_headerView;
     UICollectionView *_collectionView;
-    NSMutableArray *_sectionViewArray;
+    NSMutableArray *_sectionViewArray;  //用来存放每个分区的view
+    NSMutableArray *_dataArray;  //数据源
 }
 
 @end
@@ -161,6 +163,8 @@
         }
        }];
     
+    /*
+    //这是一个section的数据
     NSArray <BannerModel *> *bannerArray = [BannerModel mj_objectArrayWithKeyValuesArray:_jsonDic[@"data"][@"banner"]];
     
     ModuleBannerArrayModel *moduleArrayModel = [ModuleBannerArrayModel mj_objectWithKeyValues:_jsonDic[@"data"][@"modulebanner"][0]];
@@ -168,16 +172,18 @@
     ProductArrayModel *productArrayModel = [ProductArrayModel mj_objectWithKeyValues:_jsonDic[@"data"][@"proData"]];
     
     _sectionViewArray = @[].mutableCopy;
-
+     
     for (int i = 0; i < 3; i ++) {
         SectionHeaderView *headerView = [SectionHeaderView sectionHeaderViewWithBannerArray:bannerArray
                                                                         bannerArrayComplete:^(NSInteger index, BannerModel * _Nonnull model) {
                                                                             NSLog(@"你点击的是%zd",index);
                                                                         } moduleArray:moduleArrayModel moduleComplete:^(NSInteger index, ModuleBannerModel * _Nonnull model) {
                                                                            NSLog(@"你点击的是%zd",index);
+                                                                            
                                                                         } productListModel:productArrayModel];
         [_sectionViewArray addObject:headerView];
     }
+     */
     /*_headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
     NSMutableArray *imageArray = [NSMutableArray new];
     [imageArray addObjectsFromArray:[_jsonDic[@"data"][@"banner"] valueForKey:@"thumb"]];
@@ -212,6 +218,7 @@
         [productView sd_setImageWithURL:[NSURL URLWithString:_jsonDic[@"data"][@"modulebanner"][0][@"banner"][i][@"thumb"]] placeholderImage:[UIImage  imageNamed:@"tabbar_4"]];
     }*/
     
+    [self loadData];
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.minimumLineSpacing = layout.minimumInteritemSpacing = 5.0;
     layout.sectionInset = UIEdgeInsetsMake(5,5,5,5);
@@ -231,20 +238,42 @@
         make.edges.equalTo(self.view);
     }];
 }
+
+#pragma mark - loadData Method
+- (void)loadData {
+    _dataArray = @[].mutableCopy;
+    SectionModel *model = [SectionModel new];
+    model.banner = [BannerModel mj_objectArrayWithKeyValuesArray:_jsonDic[@"data"][@"banner"]];
+    model.modulebanner = [ModuleBannerArrayModel mj_objectWithKeyValues:_jsonDic[@"data"][@"modulebanner"][0]];
+    model.prodata = [ProductArrayModel mj_objectWithKeyValues:_jsonDic[@"data"][@"proData"]];
+    _sectionViewArray = @[].mutableCopy;
+    for (int i = 0; i < 3; i ++) {
+        SectionHeaderView *headerView = [SectionHeaderView sectionHeaderViewWithBannerArray:model.banner
+                                                                        bannerArrayComplete:^(NSInteger index, BannerModel * _Nonnull model) {
+                                                                            NSLog(@"你点击的是%zd",index);
+                                                                        } moduleArray:model.modulebanner moduleComplete:^(NSInteger index, ModuleBannerModel * _Nonnull model) {
+                                                                            NSLog(@"你点击的是%zd",index);
+                                                                            
+                                                                        } productListModel:model.prodata];
+        [_sectionViewArray addObject:headerView];
+        [_dataArray addObject:model];
+    }
+}
 #pragma mark - UIColectionViewDataSource &Delegate
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [_jsonDic[@"data"][@"proData"][@"list"] count];
+//    return [_jsonDic[@"data"][@"proData"][@"list"] count];
+    return ((SectionModel *) _dataArray[section]).prodata.list.count;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return  3;
+//    return  3;
+    return _dataArray.count;
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if ([kind  isEqualToString:UICollectionElementKindSectionHeader]) {
         HeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:[HeaderView reuseIdentifier] forIndexPath:indexPath];
-        
         [header addSubview: ((SectionHeaderView *)_sectionViewArray[indexPath.section])];
         /*[header addSubview:_headerView];*/
         return header;
@@ -256,7 +285,14 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ProductCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[ProductCell cellIdentifier] forIndexPath:indexPath];
-    [cell configureWithImageUrl:_jsonDic[@"data"][@"proData"][@"list"][indexPath.row][@"thumb"] name:_jsonDic[@"data"][@"proData"][@"list"][indexPath.row][@"productname"]];
+    /*[cell configureWithImageUrl:_jsonDic[@"data"][@"proData"][@"list"][indexPath.row][@"thumb"] name:_jsonDic[@"data"][@"proData"][@"list"][indexPath.row][@"productname"]];
+     （*/
+    /*ProductArrayModel *model = [ProductArrayModel mj_objectWithKeyValues:_jsonDic[@"data"][@"proData"]];
+    [cell configureCellWithData:model.list[indexPath.row]];
+     */
+    SectionModel *model = _dataArray[indexPath.section];
+    [cell  configureCellWithData:model.prodata.list[indexPath.row]];
     return cell;
 }
+
 @end

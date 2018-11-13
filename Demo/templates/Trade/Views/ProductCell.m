@@ -47,6 +47,11 @@
     _name.text = name;
 }
 
+- (void)configureCellWithData:(ProductModel *)model {
+    [_productImage sd_setImageWithURL:[NSURL URLWithString:model.thumb] placeholderImage:[UIImage imageNamed:@"tabbar_4"]];
+    _name.text = model.productname;
+}
+
 + (NSString *)cellIdentifier {
     return NSStringFromClass([self class]);
 }

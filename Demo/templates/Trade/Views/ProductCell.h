@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProductModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (void)configureWithImageUrl:(NSString *)urlStr name:(NSString *)name;
+
+- (void)configureCellWithData:(ProductModel *)model;
 
 + (NSString *)cellIdentifier;
 

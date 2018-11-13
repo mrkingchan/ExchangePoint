@@ -115,6 +115,7 @@
 		AA7EEE98219972A7000E7F34 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE8D219972A7000E7F34 /* MJFoundation.m */; };
 		AA7EEE9B21997370000E7F34 /* ProductArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE9A21997370000E7F34 /* ProductArrayModel.m */; };
 		AA7EEE9E21997423000E7F34 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE9D21997423000E7F34 /* SectionHeaderView.m */; };
+		AA7EEEA4219A9C89000E7F34 /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEEA3219A9C89000E7F34 /* SectionModel.m */; };
 		AAD53AE6218023B5000AFF58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD53AE5218023B5000AFF58 /* AppDelegate.m */; };
 		AAD53AEC218023B5000AFF58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD53AEA218023B5000AFF58 /* Main.storyboard */; };
 		AAD53AEE218023B7000AFF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD53AED218023B7000AFF58 /* Assets.xcassets */; };
@@ -375,6 +376,8 @@
 		AA7EEE9A21997370000E7F34 /* ProductArrayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductArrayModel.m; sourceTree = "<group>"; };
 		AA7EEE9C21997423000E7F34 /* SectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
 		AA7EEE9D21997423000E7F34 /* SectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
+		AA7EEEA2219A9C89000E7F34 /* SectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionModel.h; sourceTree = "<group>"; };
+		AA7EEEA3219A9C89000E7F34 /* SectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionModel.m; sourceTree = "<group>"; };
 		AAD53AE1218023B5000AFF58 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD53AE4218023B5000AFF58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAD53AE5218023B5000AFF58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1050,6 +1053,8 @@
 				AA7EEE752199721A000E7F34 /* ModuleBannerArrayModel.m */,
 				AA7EEE9921997370000E7F34 /* ProductArrayModel.h */,
 				AA7EEE9A21997370000E7F34 /* ProductArrayModel.m */,
+				AA7EEEA2219A9C89000E7F34 /* SectionModel.h */,
+				AA7EEEA3219A9C89000E7F34 /* SectionModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1420,6 +1425,7 @@
 				AA059C22218856CC00DD2EC4 /* Y_KLineView.m in Sources */,
 				AA059C8621885A2300DD2EC4 /* AFHTTPSessionManager.m in Sources */,
 				AA7EEE3F21992346000E7F34 /* SDWebImageDownloader.m in Sources */,
+				AA7EEEA4219A9C89000E7F34 /* SectionModel.m in Sources */,
 				AA059C23218856CC00DD2EC4 /* Y_StockChartRightYView.m in Sources */,
 				AAD53B4721803DBD000AFF58 /* FranceCoinVC.m in Sources */,
 				AA7EEE3521992346000E7F34 /* SDCollectionViewCell.m in Sources */,

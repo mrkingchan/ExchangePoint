@@ -20,7 +20,7 @@
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
-@interface TradeVC () <UICollectionViewDelegate,UICollectionViewDataSource> {
+@interface TradeVC () <UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout> {
     NSMutableDictionary *_jsonDic;
     UIView *_headerView;
     UICollectionView *_collectionView;
@@ -298,6 +298,16 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     SectionModel * model = _dataArray[indexPath.section];
     ProductModel *product = model.prodata.list[indexPath.row];
+}
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    SectionModel *model = _dataArray[section];
+    ProductArrayModel *productArrayModel = model.prodata;
+    if ([productArrayModel.modulename length]> 1) {
+        return CGSizeMake(kScreenWidth, 325);
+    } else {
+        return CGSizeMake(kScreenWidth , 300);
+    }
 }
 
 @end

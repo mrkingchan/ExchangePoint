@@ -37,28 +37,6 @@ CG_INLINE UIView *kViewWithConfiguraion(id superView,
     return subView;
 }
 
-
-/**
- build a viewController with given configuration
- 
- @param className className description
- @param titleStr titleStr description
- @param normalImage normalImage description
- @param selectedImage selectedImage description
- @return a viewController with given configuration
- */
-CG_INLINE  UIViewController *kbuildViewControllerWithConfiguration(Class className,
-                                                                   NSString *titleStr,
-                                                                   UIImage *normalImage,
-                                                                   UIImage *selectedImage
-                                                                   )  {
-    UIViewController *viewController = [className new];
-    UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:titleStr
-                                                       image:[normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    viewController.tabBarItem = item;
-    return viewController;
-}
-
 /**
  return imageView with given configuration
  
@@ -91,7 +69,16 @@ CG_INLINE UIImageView *kImageViewWithConfiguration(id superView,CGRect rect,UIIm
  @return button With radius
  */
 CG_INLINE UIButton *kButtonWithRadiusConfiguration(id superView,CGRect rect,UIColor *textColor,UIColor *backgroundColor,NSString *content,UIFont *textFont,CGFloat radius) {
-    UIButton *button = kButtonWithCommonConfiguration(superView, rect, textColor, backgroundColor, content, textFont);
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = rect;
+    button.titleLabel.font = textFont;
+    button.titleLabel.textAlignment = 1;
+    [button setTitleColor:textColor forState:UIControlStateNormal];
+    [button setTitle:content forState:UIControlStateNormal];
+    button.backgroundColor = backgroundColor;
+    if (superView) {
+        [superView addSubview:button];
+    }
     button.clipsToBounds = YES;
     button.layer.cornerRadius = radius;
     return button;
@@ -145,7 +132,15 @@ CG_INLINE  UILabel *kLabelWithCornerRadius(id superView,
                                            NSTextAlignment textAlignment,
                                            UIFont *font,
                                            NSString *text,CGFloat cornerRadius) {
-    UILabel *label = kLabelWithConfiguration(superView, rect, backgroundColor, textColor, textAlignment, font, text);
+    UILabel *label = [[UILabel alloc] initWithFrame:rect];
+    label.font = font;
+    label.textColor = textColor;
+    label.text = text;
+    label.textAlignment = textAlignment;
+    label.backgroundColor = backgroundColor;
+    if (superView) {
+        [superView addSubview:label];
+    }
     label.clipsToBounds = YES;
     label.layer.cornerRadius = cornerRadius;
     return label;
@@ -164,7 +159,7 @@ CG_INLINE  UILabel *kLabelWithCornerRadius(id superView,
  @param text text description
  @return the label with given configuration
  */
-CG_INLINE  UILabel *kLabelWithConfiguration(id superView,
+CG_INLINE UILabel *kLabelWithConfiguration(id superView,
                                             CGRect rect,
                                             UIColor *backgroundColor,
                                             UIColor *textColor,

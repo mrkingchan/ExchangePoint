@@ -8,7 +8,7 @@
 
 #import "ProductCell.h"
 #import "UIImageView+WebCache.h"
-#define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
 @interface ProductCell() {
     UIImageView *_productImage;
     UILabel *_name;
@@ -68,5 +68,11 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;
+}
+
+- (void)configure {
+    _productImage.backgroundColor = kRandomColor;
+    _name.text =@"";
+    _name.backgroundColor = kRandomColor;
 }
 @end

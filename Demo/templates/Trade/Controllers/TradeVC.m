@@ -18,7 +18,6 @@
 #import "SectionHeaderView.h"
 #import "SectionModel.h"
 
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
 @interface TradeVC () <UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout> {
     NSMutableDictionary *_jsonDic;

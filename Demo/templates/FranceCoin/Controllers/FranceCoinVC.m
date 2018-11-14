@@ -7,8 +7,11 @@
 //
 
 #import "FranceCoinVC.h"
+#import "ProductCell.h"
 
-@interface FranceCoinVC ()
+@interface FranceCoinVC () <UICollectionViewDataSource,UICollectionViewDelegate> {
+    UICollectionView *_collectionView;
+}
 
 @end
 
@@ -16,17 +19,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+    layout.minimumLineSpacing = layout.minimumInteritemSpacing = 5.0;
+    layout.sectionInset = UIEdgeInsetsMake(5,5,5,5);
+    layout.itemSize = CGSizeMake((kScreenWidth - 15)/2.0, (kScreenWidth - 15)/2.0);
+    _collectionView = kCollectionViewWithConfiguraiton(self.view, CGRectZero, layout, [ProductCell class], self, self);
+    [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    _collectionView.backgroundColor = [UIColor whiteColor];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 100;
 }
-*/
 
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    ProductCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[ProductCell cellIdentifier] forIndexPath:indexPath];
+    [cell configure];
+    return cell;
+}
 @end

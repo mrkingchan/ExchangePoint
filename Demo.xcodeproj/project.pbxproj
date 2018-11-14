@@ -378,6 +378,7 @@
 		AA7EEE9D21997423000E7F34 /* SectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
 		AA7EEEA2219A9C89000E7F34 /* SectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionModel.h; sourceTree = "<group>"; };
 		AA7EEEA3219A9C89000E7F34 /* SectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionModel.m; sourceTree = "<group>"; };
+		AA7EEEA5219BFAE0000E7F34 /* InitMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitMethod.h; sourceTree = "<group>"; };
 		AAD53AE1218023B5000AFF58 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD53AE4218023B5000AFF58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAD53AE5218023B5000AFF58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1169,6 +1170,7 @@
 		AAD53B3D21803D7D000AFF58 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA7EEEA5219BFAE0000E7F34 /* InitMethod.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";

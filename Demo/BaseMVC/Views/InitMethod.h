@@ -222,6 +222,7 @@ CG_INLINE  UITableView *kTableViewWithConfiguration(id superView,
     if (superView) {
         [superView addSubview:tableView];
     }
+    tableView.tableFooterView = [UIView new];
     tableView.backgroundColor = [UIColor whiteColor];
     [tableView registerClass:cellClass forCellReuseIdentifier:NSStringFromClass(cellClass)];
     return tableView;

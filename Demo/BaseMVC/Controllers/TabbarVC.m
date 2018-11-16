@@ -58,7 +58,8 @@
                                       titleStr:(NSString *)title
                                    normalImage:(UIImage *)normalImage
                                  selectedImage:(UIImage *)selectedImage {
-//    NSAssert([className isSubclassOfClass:[UIViewController class]], @"className must be a subClass of UIViewController!");
+    NSAssert([className isSubclassOfClass:[UIViewController class]], @"className must be a subClass of UIViewController!");
+    NSParameterAssert([className isSubclassOfClass:[UIViewController class]]);
     UIViewController *viewController = [className new];
     viewController.navigationItem.title = title;
     viewController.title = title;

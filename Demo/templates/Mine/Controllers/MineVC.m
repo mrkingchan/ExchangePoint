@@ -38,8 +38,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
     cell.textLabel.text = [NSString stringWithFormat:@"cell  section NO.%zd,row NO.%zd",indexPath.section,indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%zd",indexPath.row %2 == 0? 1:2]];
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%i",indexPath.row %2 == 0? 1:2]];
     return cell;
-    
 }
 @end

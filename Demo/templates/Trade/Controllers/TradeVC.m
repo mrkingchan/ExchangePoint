@@ -225,13 +225,15 @@
 //    layout.headerReferenceSize = CGSizeMake(kScreenWidth, 300);
     layout.headerReferenceSize = CGSizeMake(kScreenWidth, 325);
 
-    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, self.view.frame.size.height) collectionViewLayout:layout];
+   /* _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, self.view.frame.size.height) collectionViewLayout:layout];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
     _collectionView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_collectionView];
     [_collectionView registerClass:ProductCell.class forCellWithReuseIdentifier:
      [ProductCell cellIdentifier]];
+    */
+    _collectionView = kCollectionViewWithConfiguraiton(self.view, CGRectZero, layout, [ProductCell class], self, self);
     [_collectionView  registerClass:[HeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[HeaderView reuseIdentifier]];
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
@@ -246,7 +248,7 @@
     model.modulebanner = [ModuleBannerArrayModel mj_objectWithKeyValues:_jsonDic[@"data"][@"modulebanner"][0]];
     model.prodata = [ProductArrayModel mj_objectWithKeyValues:_jsonDic[@"data"][@"proData"]];
     _sectionViewArray = @[].mutableCopy;
-    for (int i = 0; i < 3; i ++) {
+    for (int i = 0; i < 10; i ++) {
         SectionHeaderView *headerView = [SectionHeaderView sectionHeaderViewWithBannerArray:model.banner
                                                                         bannerArrayComplete:^(NSInteger index, BannerModel * _Nonnull model) {
                                                                             NSLog(@"你点击的是%zd",index);

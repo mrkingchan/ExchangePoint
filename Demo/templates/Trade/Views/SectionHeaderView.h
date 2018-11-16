@@ -16,6 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SectionHeaderView : UIView
 
+
+/**
+ sectionHeaderView with given configuration
+
+ @param bannerArray bannerArray description
+ @param bannerComplete bannerComplete description
+ @param moduleComplete moduleComplete description
+ @param complete complete description
+ @param model model description
+ @return return a sectionHeaderView with given configuration
+ */
 + (SectionHeaderView *)sectionHeaderViewWithBannerArray:(NSArray <BannerModel *> *)bannerArray
                                     bannerArrayComplete:(void (^)(NSInteger index,BannerModel *model))bannerComplete
                                             moduleArray:(ModuleBannerArrayModel *)moduleComplete

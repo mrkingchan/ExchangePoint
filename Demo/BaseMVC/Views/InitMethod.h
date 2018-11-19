@@ -9,6 +9,7 @@
 #ifndef InitMethod_h
 #define InitMethod_h
 
+#warning this class is to code the common UI components more convnient, and @copy right by mr kingchan！
 
 /**
  return a common UIView with given configuration

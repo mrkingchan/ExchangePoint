@@ -31,6 +31,7 @@
 
 @implementation TradeVC
 
+#pragma mark - viewController's view's lifeCircle
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
@@ -312,6 +313,7 @@
     }
 }
 
+#pragma mark - memory management
 -(void)dealloc {
     if (_collectionView) {
         _collectionView.dataSource = nil;

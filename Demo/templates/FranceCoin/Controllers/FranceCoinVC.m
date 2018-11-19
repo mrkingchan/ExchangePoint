@@ -39,4 +39,5 @@
     [cell configure];
     return cell;
 }
+
 @end

@@ -299,6 +299,7 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     SectionModel * model = _dataArray[indexPath.section];
     ProductModel *product = model.prodata.list[indexPath.row];
+    NSLog(@"你点击的是%@",product.productname);
 }
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
@@ -311,4 +312,21 @@
     }
 }
 
+-(void)dealloc {
+    if (_collectionView) {
+        _collectionView.dataSource = nil;
+        _collectionView.delegate = nil;
+        _collectionView = nil;
+    }
+    if (_headerView) {
+        _headerView = nil;
+    }
+    if (_dataArray) {
+        _dataArray = nil;
+    }
+    if (_sectionViewArray) {
+        [_sectionViewArray removeAllObjects];
+        _sectionViewArray = nil;
+    }
+}
 @end

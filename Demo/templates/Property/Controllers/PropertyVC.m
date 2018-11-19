@@ -7,8 +7,11 @@
 //
 
 #import "PropertyVC.h"
+#import "ProductCell.h"
 
-@interface PropertyVC ()
+@interface PropertyVC () <UICollectionViewDataSource,UICollectionViewDelegate> {
+    UICollectionView *_collectionView;
+}
 
 @end
 
@@ -16,17 +19,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    CGFloat itemW = (kScreenWidth - 15.0)/2.0;
+    _collectionView = kCollectionViewWithConfiguraiton(self.view, CGRectZero,kLayoutWithCongiguration(itemW, itemW, 5.0, 5.0, UIEdgeInsetsMake(5, 5, 5, 5)) , [ProductCell class], self, self);
+    [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UICollectionViewDataSource &Delefgate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
 }
-*/
 
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 100;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    ProductCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[ProductCell cellIdentifier] forIndexPath:indexPath];
+    [cell configure];
+    return cell;
+}
 @end

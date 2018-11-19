@@ -227,4 +227,24 @@ CG_INLINE  UITableView *kTableViewWithConfiguration(id superView,
     [tableView registerClass:cellClass forCellReuseIdentifier:NSStringFromClass(cellClass)];
     return tableView;
 }
+
+
+/**
+ return a UICollectionViewFlowLayout with the given configuration
+
+ @param itemW itemW description
+ @param itemH itemH description
+ @param lineSpace lineSpace description
+ @param itemInterSpace itemInterSpace description
+ @param sectionInsets sectionInsets description
+ @return a UICollectionViewFlowLayout with the given configuration
+ */
+CG_INLINE  UICollectionViewFlowLayout *kLayoutWithCongiguration(CGFloat itemW,CGFloat itemH,CGFloat lineSpace,CGFloat itemInterSpace,UIEdgeInsets sectionInsets) {
+    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+    layout.itemSize = CGSizeMake(itemW, itemH);
+    layout.minimumLineSpacing = lineSpace;
+    layout.minimumInteritemSpacing = itemInterSpace;
+    layout.sectionInset = sectionInsets;
+    return layout;
+}
 #endif /* InitMethod_h */

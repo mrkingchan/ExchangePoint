@@ -40,7 +40,7 @@
         UIViewController *viewController = kbuildViewControllerWithConfiguration(classNames[i], titles[i], [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%d",i + 1]], [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%d_s",i + 1]]);
         
         UINavigationController *naviController = [[UINavigationController alloc] initWithRootViewController:viewController];
-        naviController.navigationItem.title = titles[i];
+        viewController.navigationItem.title = titles[i];
         [navis addObject:naviController];
     }
     self.viewControllers = navis;

@@ -248,4 +248,5 @@ CG_INLINE  UICollectionViewFlowLayout *kLayoutWithCongiguration(CGFloat itemW,CG
     layout.sectionInset = sectionInsets;
     return layout;
 }
+
 #endif /* InitMethod_h */

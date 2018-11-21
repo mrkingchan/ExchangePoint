@@ -301,6 +301,7 @@
     SectionModel * model = _dataArray[indexPath.section];
     ProductModel *product = model.prodata.list[indexPath.row];
     NSLog(@"你点击的是%@",product.productname);
+    iToastText(product.productname);
 }
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {

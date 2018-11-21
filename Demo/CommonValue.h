@@ -9,12 +9,19 @@
 #ifndef CommonValue_h
 #define CommonValue_h
 
-
 CG_INLINE UIFont * kfont(CGFloat  fontSize) {
     return [UIFont systemFontOfSize:fontSize];
 }
 
+/**
+  build a viewController with given ocnfiguration
 
+ @param class class description
+ @param titleStr titleStr description
+ @param normalImage normalImage description
+ @param selectedImage selectedImage description
+ @return return a viewController with configuration
+ */
 CG_INLINE UIViewController * kbuildViewControllerWithConfiguration(Class class,NSString *titleStr,UIImage *normalImage,UIImage * selectedImage) {
     UIViewController *viewController = [class new];
     UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:titleStr

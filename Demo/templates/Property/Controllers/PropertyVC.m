@@ -43,4 +43,7 @@
     [cell configure];
     return cell;
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    iToastText(@"!!!");
+}
 @end

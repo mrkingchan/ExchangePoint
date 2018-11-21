@@ -62,6 +62,9 @@
 		AA059C9121885A2300DD2EC4 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AA059C8121885A2300DD2EC4 /* UIWebView+AFNetworking.m */; };
 		AA059C9221885A2300DD2EC4 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AA059C8221885A2300DD2EC4 /* AFAutoPurgingImageCache.m */; };
 		AA059C9321885A2300DD2EC4 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = AA059C8421885A2300DD2EC4 /* AFImageDownloader.m */; };
+		AA1AB45721A3BB1D0073F3ED /* UIViewController+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1AB45621A3BB1D0073F3ED /* UIViewController+Toast.m */; };
+		AA1AB45B21A4FC080073F3ED /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1AB45A21A4FC080073F3ED /* iToast.m */; };
+		AA1AB45E21A4FC5E0073F3ED /* iToast+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1AB45D21A4FC5E0073F3ED /* iToast+Category.m */; };
 		AA7EEE3321992346000E7F34 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEDFE21992346000E7F34 /* SDCycleScrollView.m */; };
 		AA7EEE3421992346000E7F34 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEDFF21992346000E7F34 /* UIView+SDExtension.m */; };
 		AA7EEE3521992346000E7F34 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7EEE0021992346000E7F34 /* SDCollectionViewCell.m */; };
@@ -270,6 +273,13 @@
 		AA059C8321885A2300DD2EC4 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		AA059C8421885A2300DD2EC4 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
 		AA059C97218C48E800DD2EC4 /* CommonValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonValue.h; sourceTree = "<group>"; };
+		AA1AB45521A3BB1D0073F3ED /* UIViewController+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Toast.h"; sourceTree = "<group>"; };
+		AA1AB45621A3BB1D0073F3ED /* UIViewController+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Toast.m"; sourceTree = "<group>"; };
+		AA1AB45821A3DEAD0073F3ED /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AA1AB45921A4FC080073F3ED /* iToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
+		AA1AB45A21A4FC080073F3ED /* iToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
+		AA1AB45C21A4FC5E0073F3ED /* iToast+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iToast+Category.h"; sourceTree = "<group>"; };
+		AA1AB45D21A4FC5E0073F3ED /* iToast+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iToast+Category.m"; sourceTree = "<group>"; };
 		AA7EEDFB21992346000E7F34 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		AA7EEDFC21992346000E7F34 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
 		AA7EEDFD21992346000E7F34 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
@@ -900,6 +910,7 @@
 				AAD53AF2218023B7000AFF58 /* Info.plist */,
 				AAD53AF3218023B7000AFF58 /* main.m */,
 				AA059C97218C48E800DD2EC4 /* CommonValue.h */,
+				AA1AB45821A3DEAD0073F3ED /* README.md */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -1163,6 +1174,8 @@
 			children = (
 				AAD53B162180243B000AFF58 /* TabbarVC.h */,
 				AAD53B172180243B000AFF58 /* TabbarVC.m */,
+				AA1AB45521A3BB1D0073F3ED /* UIViewController+Toast.h */,
+				AA1AB45621A3BB1D0073F3ED /* UIViewController+Toast.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1171,6 +1184,10 @@
 			isa = PBXGroup;
 			children = (
 				AA7EEEA5219BFAE0000E7F34 /* InitMethod.h */,
+				AA1AB45921A4FC080073F3ED /* iToast.h */,
+				AA1AB45A21A4FC080073F3ED /* iToast.m */,
+				AA1AB45C21A4FC5E0073F3ED /* iToast+Category.h */,
+				AA1AB45D21A4FC5E0073F3ED /* iToast+Category.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1408,6 +1425,8 @@
 				AA059C52218856E300DD2EC4 /* MASCompositeConstraint.m in Sources */,
 				AA059BDB218856BD00DD2EC4 /* NNTradeDetailView.m in Sources */,
 				AA7EEE4021992346000E7F34 /* UIImage+GIF.m in Sources */,
+				AA1AB45721A3BB1D0073F3ED /* UIViewController+Toast.m in Sources */,
+				AA1AB45E21A4FC5E0073F3ED /* iToast+Category.m in Sources */,
 				AA059C20218856CC00DD2EC4 /* Y_StockChartView.m in Sources */,
 				AA059C9221885A2300DD2EC4 /* AFAutoPurgingImageCache.m in Sources */,
 				AA059C1E218856CC00DD2EC4 /* Y_StockChartGlobalVariable.m in Sources */,
@@ -1420,6 +1439,7 @@
 				AA7EEE8E219972A7000E7F34 /* MJPropertyType.m in Sources */,
 				AA059C9321885A2300DD2EC4 /* AFImageDownloader.m in Sources */,
 				AA059C24218856CC00DD2EC4 /* Y_VolumeMAView.m in Sources */,
+				AA1AB45B21A4FC080073F3ED /* iToast.m in Sources */,
 				AA7EEE70219970DA000E7F34 /* ProductModel.m in Sources */,
 				AA7EEE3C21992346000E7F34 /* SDWebImageManager.m in Sources */,
 				AA059C31218856CC00DD2EC4 /* Y_KLineMainView.m in Sources */,

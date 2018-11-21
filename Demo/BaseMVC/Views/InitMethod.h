@@ -249,4 +249,19 @@ CG_INLINE  UICollectionViewFlowLayout *kLayoutWithCongiguration(CGFloat itemW,CG
     return layout;
 }
 
+// MARK: - 判断是否空
+CG_INLINE BOOL kEmpty(id value) {
+    if ([value isKindOfClass:[NSNull class]] || value == nil) {
+        return YES;
+    } else if ([value isKindOfClass:[NSString class]]) {
+        return [value isEqualToString:@""] || [[value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0;
+    }else if ([value isKindOfClass:[NSArray class]]) {
+        return [(NSArray *)value count] == 0;
+    }else if ([value isKindOfClass:[NSDictionary class]]) {
+        return [(NSDictionary *)value count] == 0;
+    } else {
+        return YES;
+    }
+}
+
 #endif /* InitMethod_h */

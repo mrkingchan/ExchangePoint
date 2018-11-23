@@ -2,7 +2,7 @@
 //  UIViewController+Toast.h
 //  Demo
 //
-//  Created by 云笈 on 2018/11/20.
+//  Created by Chan on 2018/11/20.
 //  Copyright © 2018年 Chan. All rights reserved.
 //
 

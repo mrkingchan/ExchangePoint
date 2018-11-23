@@ -2,7 +2,7 @@
 //  NNTagCell.h
 //  DMHCExchange
 //
-//  Created by 云笈 on 2018/10/26.
+//  Created by Chan on 2018/10/26.
 //  Copyright © 2018年 超级钱包. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  MineVC.m
 //  Demo
 //
-//  Created by 云笈 on 2018/10/24.
+//  Created by Chan on 2018/10/24.
 //  Copyright © 2018年 Chan. All rights reserved.
 //
 
@@ -40,5 +40,19 @@
     cell.textLabel.text = [NSString stringWithFormat:@"cell  section NO.%zd,row NO.%zd",indexPath.section,indexPath.row];
     cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%i",indexPath.row %2 == 0? 1:2]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [_tableView cellForRowAtIndexPath:indexPath];
+    NSString *contentStr = cell.textLabel.text;
+    iToastText(contentStr);
+}
+
+-(void)dealloc {
+    if (_tableView) {
+        _tableView.dataSource = nil;
+        _tableView.delegate = nil;
+        _tableView = nil;
+    }
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "MineVC.h"
+#import "MineDetailVC.h"
 
 @interface MineVC () <UITableViewDataSource,UITableViewDelegate> {
     UITableView *_tableView;
@@ -46,6 +47,7 @@
     UITableViewCell *cell = [_tableView cellForRowAtIndexPath:indexPath];
     NSString *contentStr = cell.textLabel.text;
     iToastText(contentStr);
+    [self.navigationController pushViewController:[MineDetailVC new] animated:YES];
 }
 
 -(void)dealloc {

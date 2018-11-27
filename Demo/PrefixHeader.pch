@@ -12,6 +12,7 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "Masonry_v1.1.0/Masonry.h"
+#import "MJRefresh.h"
 
 #define isiPhoneX  (([[UIScreen mainScreen] bounds].size.height) == 812.f ? 1 : 0 )
 #define kiPhoneXAll ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
@@ -30,5 +31,23 @@
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+#define  kAdjustsScrollViewInsets_NO(scrollView,vc)\
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+NSMethodSignature *signature = [UIScrollView instanceMethodSignatureForSelector:@selector(setContentInsetAdjustmentBehavior:)];\
+NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];\
+NSInteger argument = 2;\
+invocation.target = scrollView;\
+invocation.selector = @selector(setContentInsetAdjustmentBehavior:);\
+[invocation setArgument:&argument atIndex:2];\
+[invocation invoke];\
+} else {\
+vc.automaticallyAdjustsScrollViewInsets = NO;\
+}\
+_Pragma("clang diagnostic pop") \
+} while (0)
 
 #endif /* PrefixHeader_pch */

@@ -7,8 +7,9 @@
 //
 
 #import "MineDetailVC.h"
+#import "RainbowVC.h"
 
-@interface MineDetailVC ()
+@interface MineDetailVC () <UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -33,6 +34,11 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
     cell.textLabel.text = [NSString stringWithFormat:@"%@%zd",self.class,indexPath.row];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.navigationController pushViewController:[RainbowVC new] animated:YES];
 }
 
 -(void)headerRefreshAction {

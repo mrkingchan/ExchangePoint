@@ -29,6 +29,8 @@
 		AA00186621AD2A230047C52A /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA00184F21AD2A230047C52A /* MJRefreshBackFooter.m */; };
 		AA00186721AD2A230047C52A /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA00185021AD2A230047C52A /* MJRefreshAutoFooter.m */; };
 		AA00186821AD2A230047C52A /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = AA00185221AD2A230047C52A /* MJRefreshComponent.m */; };
+		AA00186B21AE74040047C52A /* BaseCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA00186A21AE74040047C52A /* BaseCollectionVC.m */; };
+		AA00186E21AE75A20047C52A /* RainbowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA00186D21AE75A20047C52A /* RainbowVC.m */; };
 		AA059BDB218856BD00DD2EC4 /* NNTradeDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA059BD3218856BD00DD2EC4 /* NNTradeDetailView.m */; };
 		AA059BDC218856BD00DD2EC4 /* NNTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA059BD6218856BD00DD2EC4 /* NNTagCell.m */; };
 		AA059BDD218856BD00DD2EC4 /* NNDropListView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA059BD7218856BD00DD2EC4 /* NNDropListView.m */; };
@@ -222,6 +224,10 @@
 		AA00185221AD2A230047C52A /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
 		AA00185321AD2A230047C52A /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
 		AA00185421AD2A230047C52A /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		AA00186921AE74040047C52A /* BaseCollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionVC.h; sourceTree = "<group>"; };
+		AA00186A21AE74040047C52A /* BaseCollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionVC.m; sourceTree = "<group>"; };
+		AA00186C21AE75A20047C52A /* RainbowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainbowVC.h; sourceTree = "<group>"; };
+		AA00186D21AE75A20047C52A /* RainbowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainbowVC.m; sourceTree = "<group>"; };
 		AA059BD3218856BD00DD2EC4 /* NNTradeDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTradeDetailView.m; sourceTree = "<group>"; };
 		AA059BD4218856BD00DD2EC4 /* NNKlineSegementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKlineSegementView.h; sourceTree = "<group>"; };
 		AA059BD5218856BD00DD2EC4 /* NNTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNTagCell.h; sourceTree = "<group>"; };
@@ -1279,6 +1285,8 @@
 				AAD53B4D21803DE1000AFF58 /* MineVC.m */,
 				AA00182321AD27EF0047C52A /* MineDetailVC.h */,
 				AA00182421AD27EF0047C52A /* MineDetailVC.m */,
+				AA00186C21AE75A20047C52A /* RainbowVC.h */,
+				AA00186D21AE75A20047C52A /* RainbowVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1342,6 +1350,8 @@
 				AA1AB45621A3BB1D0073F3ED /* UIViewController+Toast.m */,
 				AA0017DD21AD25BD0047C52A /* BaseTableVC.h */,
 				AA0017DE21AD25BD0047C52A /* BaseTableVC.m */,
+				AA00186921AE74040047C52A /* BaseCollectionVC.h */,
+				AA00186A21AE74040047C52A /* BaseCollectionVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1519,6 +1529,7 @@
 				AA7EEE3921992346000E7F34 /* TAAbstractDotView.m in Sources */,
 				AA059BDD218856BD00DD2EC4 /* NNDropListView.m in Sources */,
 				AA00186821AD2A230047C52A /* MJRefreshComponent.m in Sources */,
+				AA00186E21AE75A20047C52A /* RainbowVC.m in Sources */,
 				AA7EEE4921992346000E7F34 /* SDImageCacheConfig.m in Sources */,
 				AA059C32218856CC00DD2EC4 /* Y_MALine.m in Sources */,
 				AA059C2E218856CC00DD2EC4 /* Y_KLineVolumePositionModel.m in Sources */,
@@ -1632,6 +1643,7 @@
 				AA059C22218856CC00DD2EC4 /* Y_KLineView.m in Sources */,
 				AA059C8621885A2300DD2EC4 /* AFHTTPSessionManager.m in Sources */,
 				AA7EEE3F21992346000E7F34 /* SDWebImageDownloader.m in Sources */,
+				AA00186B21AE74040047C52A /* BaseCollectionVC.m in Sources */,
 				AA7EEEA4219A9C89000E7F34 /* SectionModel.m in Sources */,
 				AA00185621AD2A230047C52A /* MJRefreshConst.m in Sources */,
 				AA059C23218856CC00DD2EC4 /* Y_StockChartRightYView.m in Sources */,

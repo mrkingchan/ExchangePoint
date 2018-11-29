@@ -264,4 +264,16 @@ CG_INLINE BOOL kEmpty(id value) {
     }
 }
 
+// MARK: - 转json
+CG_INLINE id kValueToJson(id value) {
+    id resultValue = nil;
+    if ([value isKindOfClass:[NSData class]]) {
+        resultValue = [NSJSONSerialization JSONObjectWithData:value options:NSJSONReadingMutableLeaves error:nil];
+    } else if ([value isKindOfClass:[NSString class]]) {
+        resultValue = [NSJSONSerialization JSONObjectWithData:[value dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:nil];
+    } else {
+        resultValue = value;
+    }
+    return resultValue;
+}
 #endif /* InitMethod_h */

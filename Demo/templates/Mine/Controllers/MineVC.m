@@ -50,6 +50,7 @@
     [self.navigationController pushViewController:[MineDetailVC new] animated:YES];
 }
 
+#pragma mark - memory management
 -(void)dealloc {
     if (_tableView) {
         _tableView.dataSource = nil;
@@ -57,4 +58,5 @@
         _tableView = nil;
     }
 }
+
 @end

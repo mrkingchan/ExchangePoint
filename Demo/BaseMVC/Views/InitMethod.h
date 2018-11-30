@@ -276,4 +276,17 @@ CG_INLINE id kValueToJson(id value) {
     }
     return resultValue;
 }
+
+CG_INLINE void kStatusBarLoading(BOOL visible) {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:visible];
+}
+
+CG_INLINE UIFont *kFont(CGFloat size) {
+    return [UIFont systemFontOfSize:size];
+}
+
+CG_INLINE UIFont *kFontBold(CGFloat size) {
+    return [UIFont boldSystemFontOfSize:size];
+}
+
 #endif /* InitMethod_h */

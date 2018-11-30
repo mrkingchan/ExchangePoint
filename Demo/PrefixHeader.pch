@@ -15,7 +15,7 @@
 #import "MJRefresh.h"
 
 #define isiPhoneX  (([[UIScreen mainScreen] bounds].size.height) == 812.f ? 1 : 0 )
-#define kiPhoneXAll ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
+#define kiPhoneXAll ([UIScreen mainScreen].bounds.size.height == 812 ||[UIScreen mainScreen].bounds.size.height == 896)
 #define kiPhoneX_Top_Height (([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)?24:0)
 #define kiPhoneX_Bottom_Height  (([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)?34:0)
 #import "UILabel+NNHExtension.h"

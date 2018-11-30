@@ -20,7 +20,8 @@
     [_collectionView  mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-    
+    kAdjustsScrollViewInsets_NO(_collectionView, self);
+
 }
 
 

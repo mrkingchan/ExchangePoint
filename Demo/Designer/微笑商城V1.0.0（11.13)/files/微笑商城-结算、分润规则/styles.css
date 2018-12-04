@@ -1,0 +1,37 @@
+﻿body {
+  margin:0px;
+  background-color:rgba(242, 242, 242, 1);
+  background-image:none;
+  position:static;
+  left:auto;
+  width:1271px;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u175_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1251px;
+  height:235px;
+}
+#u175 {
+  position:absolute;
+  left:20px;
+  top:40px;
+  width:1251px;
+  height:235px;
+}
+#u176 {
+  position:absolute;
+  left:2px;
+  top:110px;
+  width:1247px;
+  visibility:hidden;
+  word-wrap:break-word;
+}

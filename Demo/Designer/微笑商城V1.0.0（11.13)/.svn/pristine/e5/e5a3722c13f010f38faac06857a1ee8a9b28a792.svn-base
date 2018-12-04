@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>确认订单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/确认订单/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/确认订单/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (图片) -->
+      <div id="u603" class="ax_default _图片">
+        <img id="u603_img" class="img " src="images/确认订单/u603.png"/>
+        <!-- Unnamed () -->
+        <div id="u604" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u605" class="ax_default">
+
+        <!-- Unnamed (图片) -->
+        <div id="u606" class="ax_default _图片">
+          <img id="u606_img" class="img " src="images/确认订单/u606.png"/>
+          <!-- Unnamed () -->
+          <div id="u607" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u608" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u609" class="ax_default label">
+            <div id="u609_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u610" class="text" style="visibility: visible;">
+              <p><span>ATA</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u611" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u612" class="ax_default label">
+            <div id="u612_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u613" class="text" style="visibility: visible;">
+              <p><span>ATA</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u614" class="ax_default box_2 ax_default_hidden" style="display: none; visibility: hidden">
+          <div id="u614_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u615" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u616" class="ax_default _二级标题">
+        <div id="u616_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u617" class="text" style="visibility: visible;">
+          <p><span>未上传身份证</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u618" class="ax_default _二级标题">
+        <div id="u618_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u619" class="text" style="visibility: visible;">
+          <p><span>已上传身份证</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u620" class="ax_default _图片">
+        <img id="u620_img" class="img " src="images/确认订单/u620.png"/>
+        <!-- Unnamed () -->
+        <div id="u621" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u622" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u623" class="ax_default box_1">
+          <img id="u623_img" class="img " src="images/确认订单/u623.png"/>
+          <!-- Unnamed () -->
+          <div id="u624" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u625" class="ax_default label">
+          <div id="u625_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u626" class="text" style="visibility: visible;">
+            <p><span>ATA</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u627" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u628" class="ax_default label">
+          <div id="u628_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u629" class="text" style="visibility: visible;">
+            <p><span>ATA</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u630" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u631" class="ax_default label">
+          <div id="u631_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u632" class="text" style="visibility: visible;">
+            <p><span>ATA</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u633" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u634" class="ax_default label">
+          <div id="u634_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u635" class="text" style="visibility: visible;">
+            <p><span>ATA</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u636" class="ax_default _连接线">
+        <img id="u636_seg0" class="img " src="images/确认订单/u636_seg0.png" alt="u636_seg0"/>
+        <img id="u636_seg1" class="img " src="images/ata支付流程图/u121_seg1.png" alt="u636_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u637" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u638" class="ax_default _连接线">
+        <img id="u638_seg0" class="img " src="images/确认订单/u638_seg0.png" alt="u638_seg0"/>
+        <img id="u638_seg1" class="img " src="images/确认订单/u638_seg1.png" alt="u638_seg1"/>
+        <img id="u638_seg2" class="img " src="images/确认订单/u638_seg2.png" alt="u638_seg2"/>
+        <!-- Unnamed () -->
+        <div id="u639" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u640" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u641" class="ax_default label">
+          <div id="u641_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u642" class="text" style="visibility: visible;">
+            <p><span>ATA</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u643" class="ax_default">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u644" class="ax_default box_1">
+          <img id="u644_img" class="img " src="images/确认订单/u623.png"/>
+          <!-- Unnamed () -->
+          <div id="u645" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u646" class="ax_default label">
+          <div id="u646_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u647" class="text" style="visibility: visible;">
+            <p><span>ATA</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u648" class="ax_default sticky_1">
+        <div id="u648_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u649" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">海外购商品订单（延用牛牛汇规则）</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">1、用户购买海外商品时，需判断收货人是否有上传身份证，若未上传则显示提示语，提示语需显示收货人的名字</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">2、收货人未上传身份证时，不可提交订单，点击“提交订单”时提示：您还未上传收货人身份证信息，是否现在上传！</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">3、收货人已填写并上传身份证时，则显示身份证号，格式为：4320***********6375</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">4、未填写收货地址，则提示“请先填写收货地址”</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u650" class="ax_default box_2 ax_default_hidden" style="display: none; visibility: hidden">
+        <div id="u650_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u651" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u652" class="ax_default box_2 ax_default_hidden" style="display: none; visibility: hidden">
+        <div id="u652_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u653" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

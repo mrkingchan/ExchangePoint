@@ -26,17 +26,21 @@
 
 - (void)setHeaderRefresh:(BOOL)headerRefresh {
     if (headerRefresh) {
-        _tableView.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefreshAction)];
+        [_tableView  addLegendHeaderWithRefreshingBlock:^{
+            [self headerRefreshAction];
+        }];
     } else {
-        _tableView.mj_header = nil;
+        
     }
 }
 
 -(void)setFooterRefresh:(BOOL)footerRefresh {
     if (footerRefresh) {
-        _tableView.mj_footer = [MJRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRefreshAction)];
+      
+        [_tableView addLegendFooterWithRefreshingBlock:^{
+            [self footerRefreshAction];
+        }];
     }else {
-        _tableView.mj_footer = nil;
     }
 }
 

@@ -29,22 +29,21 @@
 
 -(void)setHeaderRefresh:(BOOL)headerRefresh {
     if (headerRefresh) {
-        _collectionView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+        [_collectionView  addLegendHeaderWithRefreshingBlock:^{
             [self headerRefreshAction];
         }];
     } else {
-        _collectionView.mj_header = nil;
+        
     }
 }
 
 
 -(void)setFooterRefresh:(BOOL)footerRefresh {
     if (footerRefresh) {
-        _collectionView.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
+        [_collectionView addLegendFooterWithRefreshingBlock:^{
             [self footerRefreshAction];
         }];
     } else {
-        _collectionView.mj_footer = nil;
     }
 }
 
